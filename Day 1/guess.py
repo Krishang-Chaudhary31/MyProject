@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import random
 number=random.randint(1,100)
 attempts=0
@@ -13,24 +13,3 @@ while guess!=number:
   print("Too high!! Try again")
  else:
    print(f"Congratulations!! You guessed it right in {attempts} attempts")     
-=======
-import random
-
-number = random.randint(1, 100)
-guess = None
-attempts = 0
-
-print("Welcome to the Number Guessing Game!")
-print("I have chosen a number between 1 and 100. Try to guess it!")
-
-while guess != number:
-    guess = int(input("Enter your guess: "))
-    attempts += 1
-
-    if guess < number:
-        print("Too low, try again.")
-    elif guess > number:
-        print("Too high, try again.")
-    else:
-        print(f"Correct! You guessed it in {attempts} attempts.")
->>>>>>> 749ebff4b2583bddb8083da3ddca9b6774599244
